@@ -6,27 +6,65 @@
     <title>Perfil de Miguel Ángel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: 'Segoe UI', sans-serif; text-align: center; padding: 40px 20px; background-color: #f4f7f6; color: #333; }
-        .card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); max-width: 500px; margin: auto; }
-        .profile-pic { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 5px solid #003b5c; margin-bottom: 20px; }
-        h1 { color: #003b5c; margin-bottom: 10px; }
-        .info { font-size: 1.1em; margin-bottom: 20px; }
-        .unam-tag { background-color: #003b5c; color: #f1c40f; padding: 5px 15px; border-radius: 20px; font-weight: bold; display: inline-block; margin-top: 10px; }
-        .social-links { margin-top: 25px; }
-        .social-links a { text-decoration: none; color: #e1306c; font-size: 2.5em; transition: 0.3s; }
-        .social-links a:hover { transform: scale(1.2); color: #bc2a8d; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            padding: 40px 20px; 
+            background-color: #eef2f3; 
+            color: #333; 
+        }
+        .card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 25px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+            max-width: 450px; 
+            margin: auto; 
+        }
+        .profile-pic { 
+            width: 200px; 
+            height: 200px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 6px solid #003b5c; 
+            margin-bottom: 20px; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        h1 { color: #003b5c; margin-bottom: 5px; font-size: 1.8em; }
+        .age { color: #7f8c8d; font-size: 1.1em; margin-bottom: 15px; }
+        .career { font-size: 1.2em; margin: 10px 0; color: #2c3e50; }
+        .unam-box { 
+            background-color: #003b5c; 
+            color: #f1c40f; 
+            padding: 8px 20px; 
+            border-radius: 50px; 
+            display: inline-block; 
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .social-links { margin-top: 30px; }
+        .social-links a { 
+            text-decoration: none; 
+            color: #e1306c; 
+            font-size: 3em; 
+            transition: transform 0.3s; 
+            display: inline-block;
+        }
+        .social-links a:hover { transform: scale(1.1); }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <img src="foto.png" alt="Miguel Ángel" class="profile-pic">
+        <img src="foto.jpg" alt="Miguel Ángel Álvarez" class="profile-pic">
         
         <h1>Miguel Ángel Álvarez</h1>
-        <div class="info">
-            <p>📍 20 años</p>
-            <p>Estudiante de <strong>Ciencias Ambientales</strong></p>
-            <div class="unam-tag">UNAM - ENCiT</div>
+        <p class="age">20 años</p>
+        
+        <p class="career">Estudiante de <strong>Ciencias Ambientales</strong></p>
+        
+        <div class="unam-box">
+            UNAM - ENCiT
         </div>
 
         <div class="social-links">
