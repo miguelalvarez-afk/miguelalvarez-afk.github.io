@@ -3,68 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil de Miguel Ángel</title>
+    <title>Miguel Ángel | Ciencias Ambientales</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            text-align: center; 
-            padding: 40px 20px; 
-            background-color: #eef2f3; 
-            color: #333; 
+        :root {
+            --verde-naturaleza: #2d6a4f;
+            --azul-unam: #003b5c;
+            --dorado-unam: #f1c40f;
+            --gris-suave: #f8f9fa;
         }
-        .card { 
-            background: white; 
-            padding: 30px; 
-            border-radius: 25px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
-            max-width: 450px; 
-            margin: auto; 
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #e8f5e9 0%, #d0e8d5 100%);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
         }
-        .profile-pic { 
-            width: 200px; 
-            height: 200px; 
-            border-radius: 50%; 
-            object-fit: cover; 
-            border: 6px solid #003b5c; 
-            margin-bottom: 20px; 
+
+        .card {
+            background: white;
+            max-width: 450px;
+            width: 100%;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .header-bg {
+            background: var(--azul-unam);
+            height: 100px;
+            width: 100%;
+        }
+
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-top: -80px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
-        h1 { color: #003b5c; margin-bottom: 5px; font-size: 1.8em; }
-        .age { color: #7f8c8d; font-size: 1.1em; margin-bottom: 15px; }
-        .career { font-size: 1.2em; margin: 10px 0; color: #2c3e50; }
-        .unam-box { 
-            background-color: #003b5c; 
-            color: #f1c40f; 
-            padding: 8px 20px; 
-            border-radius: 50px; 
-            display: inline-block; 
-            font-weight: bold;
-            margin-top: 10px;
+
+        h1 {
+            margin: 15px 0 5px;
+            color: var(--azul-unam);
+            font-size: 1.8rem;
         }
-        .social-links { margin-top: 30px; }
-        .social-links a { 
-            text-decoration: none; 
-            color: #e1306c; 
-            font-size: 3em; 
-            transition: transform 0.3s; 
+
+        .tag-unam {
+            background: var(--azul-unam);
+            color: var(--dorado-unam);
             display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
         }
-        .social-links a:hover { transform: scale(1.1); }
+
+        .bio {
+            padding: 0 30px;
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .hobbies-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px 30px;
+        }
+
+        .hobby-item {
+            background: var(--gris-suave);
+            padding: 8px 15px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            color: var(--verde-naturaleza);
+            border: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #e1306c;
+            font-size: 2.5rem;
+            transition: transform 0.3s;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+        }
+
+        hr {
+            width: 80%;
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 20px auto;
+        }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <img src="foto.jpg" alt="Miguel Ángel Álvarez" class="profile-pic">
+        <div class="header-bg"></div>
         
+        <img src="foto.jpg" alt="Miguel Ángel" class="profile-pic">
+
         <h1>Miguel Ángel Álvarez</h1>
-        <p class="age">20 años</p>
-        
-        <p class="career">Estudiante de <strong>Ciencias Ambientales</strong></p>
-        
-        <div class="unam-box">
-            UNAM - ENCiT
+        <div class="tag-unam">UNAM - ENCiT</div>
+
+        <div class="bio">
+            <p><strong>20 años</strong> | Futuro Lic. en <strong>Ciencias Ambientales</strong>.</p>
+            <p>Apasionado por el cuidado del planeta y el estudio de la Tierra.</p>
+        </div>
+
+        <hr>
+
+        <div class="hobbies-container">
+            <div class="hobby-item"><i class="fas fa-gamepad"></i> Videojuegos</div>
+            <div class="hobby-item"><i class="fas fa-dumbbell"></i> Gimnasio</div>
+            <div class="hobby-item"><i class="fas fa-leaf"></i> Naturaleza</div>
+            <div class="hobby-item"><i class="fas fa-walking"></i> Salir</div>
         </div>
 
         <div class="social-links">
