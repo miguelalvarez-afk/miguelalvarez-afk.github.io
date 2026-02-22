@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil de Miguel Ángel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background-color: #f0f8f0; }
-        .card { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: inline-block; }
-        h1 { color: #2c3e50; }
-        p { font-size: 1.2em; color: #34495e; }
-        .unam { color: #003b5c; font-weight: bold; }
+        body { font-family: 'Segoe UI', sans-serif; text-align: center; padding: 40px 20px; background-color: #f4f7f6; color: #333; }
+        .card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); max-width: 500px; margin: auto; }
+        .profile-pic { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 5px solid #003b5c; margin-bottom: 20px; }
+        h1 { color: #003b5c; margin-bottom: 10px; }
+        .info { font-size: 1.1em; margin-bottom: 20px; }
+        .unam-tag { background-color: #003b5c; color: #f1c40f; padding: 5px 15px; border-radius: 20px; font-weight: bold; display: inline-block; margin-top: 10px; }
+        .social-links { margin-top: 25px; }
+        .social-links a { text-decoration: none; color: #e1306c; font-size: 2.5em; transition: 0.3s; }
+        .social-links a:hover { transform: scale(1.2); color: #bc2a8d; }
     </style>
 </head>
 <body>
+
     <div class="card">
-        <h1>¡Hola! 👋</h1>
-        <p>Mi nombre es <strong>Miguel Ángel Álvarez</strong>.</p>
-        <p>Tengo 20 años y actualmente soy estudiante en la <span class="unam">UNAM</span>.</p>
-        <p>Estudio la carrera de <strong>Ciencias Ambientales</strong> en la <strong>Escuela Nacional de Ciencias de la Tierra (ENCiT)</strong>.</p>
+        <img src="foto.png" alt="Miguel Ángel" class="profile-pic">
+        
+        <h1>Miguel Ángel Álvarez</h1>
+        <div class="info">
+            <p>📍 20 años</p>
+            <p>Estudiante de <strong>Ciencias Ambientales</strong></p>
+            <div class="unam-tag">UNAM - ENCiT</div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/alvarez_mgll?igsh=cDdseGlsNWt0cXd5&utm_source=qr" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
     </div>
+
 </body>
 </html>
